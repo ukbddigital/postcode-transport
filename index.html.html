@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Postcode Transport & Recovery | Vehicle Transport & Breakdown Recovery | Suffolk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--red:#CC1212;--red-dark:#A00D0D;--navy:#0A1F5C;--navy-dark:#061240;--gold:#F0C040;--off-white:#F8F8F8;--text:#1a1a2e;--text-muted:#555;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;overflow-x:hidden;}
+
+nav{position:sticky;top:0;z-index:100;background:var(--navy);display:flex;align-items:center;justify-content:space-between;padding:0 clamp(20px,5vw,80px);height:80px;box-shadow:0 2px 20px rgba(0,0,0,0.3);}
+.nav-logo{display:flex;align-items:center;text-decoration:none;}
+.nav-logo img{height:56px;width:auto;display:block;background:#fff;padding:5px 8px;border-radius:4px;}
+.nav-links{display:flex;align-items:center;gap:32px;list-style:none;}
+.nav-links a{color:rgba(255,255,255,0.85);text-decoration:none;font-size:13px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;transition:color .2s;}
+.nav-links a:hover{color:#fff;}
+.nav-right{display:flex;align-items:center;gap:20px;}
+.nav-phone{color:var(--gold);font-weight:600;font-size:15px;text-decoration:none;}
+.btn-red{background:var(--red);color:#fff;padding:11px 24px;border-radius:4px;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:background .2s,transform .15s;white-space:nowrap;border:none;cursor:pointer;}
+.btn-red:hover{background:var(--red-dark);transform:translateY(-1px);}
+
+.hero{position:relative;min-height:90vh;display:flex;align-items:center;background:var(--navy-dark);overflow:hidden;}
+.hero-bg{position:absolute;inset:0;background:url('https://pctransportandrecovery.co.uk/wp-content/uploads/2024/07/IMG_5040-scaled.jpg') center/cover no-repeat;opacity:0.25;}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(105deg,rgba(6,18,64,0.97) 45%,rgba(6,18,64,0.6) 100%);}
+.hero-inner{position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:clamp(60px,10vw,120px) clamp(20px,5vw,80px);display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+.hero-tag{display:inline-flex;align-items:center;gap:10px;margin-bottom:24px;}
+.hero-tag span{display:block;width:28px;height:1px;background:var(--red);}
+.hero-tag p{color:var(--red);font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(42px,6vw,72px);font-weight:700;color:#fff;line-height:1.05;margin-bottom:24px;}
+.hero h1 .gold{color:var(--gold);}
+.hero-sub{font-size:16px;color:rgba(255,255,255,0.72);line-height:1.75;max-width:480px;margin-bottom:40px;}
+.hero-btns{display:flex;gap:16px;flex-wrap:wrap;}
+.btn-outline-white{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,0.4);padding:11px 24px;border-radius:4px;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:border-color .2s,background .2s;}
+.btn-outline-white:hover{border-color:rgba(255,255,255,0.8);background:rgba(255,255,255,0.06);}
+.hero-stats{display:flex;flex-direction:column;gap:20px;}
+.hero-stat-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-left:3px solid var(--red);border-radius:6px;padding:20px 24px;}
+.hero-stat-num{font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:700;color:var(--gold);line-height:1;margin-bottom:4px;}
+.hero-stat-label{font-size:12px;color:rgba(255,255,255,0.6);letter-spacing:.08em;text-transform:uppercase;}
+
+.ticker{background:var(--red);padding:13px 0;overflow:hidden;}
+.ticker-track{display:flex;white-space:nowrap;animation:ticker 22s linear infinite;}
+.ticker-item{color:#fff;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:0 32px;border-right:1px solid rgba(255,255,255,0.3);}
+@keyframes ticker{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+
+.stats-bar{background:#fff;border-bottom:1px solid #eee;display:grid;grid-template-columns:repeat(4,1fr);}
+.stats-bar-item{padding:32px 20px;text-align:center;border-right:1px solid #eee;}
+.stats-bar-item:last-child{border-right:none;}
+.stats-bar-num{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:700;color:var(--navy);line-height:1;margin-bottom:6px;}
+.stats-bar-label{font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.1em;font-weight:500;}
+
+.services{padding:clamp(60px,8vw,100px) clamp(20px,5vw,80px);background:var(--off-white);}
+.section-inner{max-width:1180px;margin:0 auto;}
+.s-label{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+.s-label span{display:block;width:28px;height:1px;background:var(--red);}
+.s-label p{color:var(--red);font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,4vw,52px);font-weight:700;color:var(--navy);line-height:1.1;margin-bottom:12px;}
+.section-sub{font-size:16px;color:var(--text-muted);line-height:1.7;max-width:560px;margin-bottom:52px;}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.svc-card{background:#fff;border-radius:8px;overflow:hidden;border:1px solid #e8e8e8;transition:transform .2s,box-shadow .2s;}
+.svc-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(10,31,92,0.1);}
+.svc-card-head{background:var(--navy);padding:28px 28px 24px;}
+.svc-icon{width:48px;height:48px;background:var(--red);border-radius:6px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;}
+.svc-icon svg{width:24px;height:24px;fill:#fff;}
+.svc-name{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:#fff;margin-bottom:4px;}
+.svc-tag{font-size:10px;color:var(--gold);font-weight:600;letter-spacing:.12em;text-transform:uppercase;}
+.svc-body{padding:24px 28px;}
+.svc-body p{font-size:14px;color:var(--text-muted);line-height:1.75;}
+
+.why{padding:clamp(60px,8vw,100px) clamp(20px,5vw,80px);background:var(--navy);}
+.why .section-title{color:#fff;}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+.why-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:32px 24px;}
+.why-num{font-family:'Cormorant Garamond',serif;font-size:56px;font-weight:700;color:var(--red);line-height:1;margin-bottom:16px;}
+.why-title{font-size:14px;font-weight:600;color:#fff;text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px;}
+.why-desc{font-size:14px;color:rgba(255,255,255,0.55);line-height:1.7;}
+
+.testi{padding:clamp(60px,8vw,100px) clamp(20px,5vw,80px);background:#fff;}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.testi-card{background:var(--off-white);border-radius:8px;padding:32px 28px;border:1px solid #eee;}
+.testi-stars{color:var(--gold);font-size:16px;margin-bottom:16px;letter-spacing:2px;}
+.testi-text{font-size:15px;color:var(--text);line-height:1.75;font-style:italic;margin-bottom:20px;}
+.testi-name{font-weight:600;font-size:13px;color:var(--navy);}
+.testi-loc{font-size:12px;color:var(--red);margin-top:2px;}
+
+.contact{padding:clamp(60px,8vw,100px) clamp(20px,5vw,80px);background:var(--off-white);}
+.contact-wrap{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
+.contact-details h2{font-family:'Cormorant Garamond',serif;font-size:clamp(30px,4vw,48px);font-weight:700;color:var(--navy);line-height:1.1;margin-bottom:20px;}
+.contact-details p{font-size:15px;color:var(--text-muted);line-height:1.8;margin-bottom:36px;}
+.c-detail{display:flex;align-items:center;gap:16px;margin-bottom:20px;}
+.c-icon{width:44px;height:44px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.c-icon svg{width:18px;height:18px;fill:#fff;}
+.c-txt strong{display:block;font-size:15px;color:var(--navy);font-weight:600;}
+.c-txt span{font-size:13px;color:var(--text-muted);}
+.contact-form{background:#fff;border-radius:10px;padding:40px;border:1px solid #e8e8e8;}
+.contact-form h3{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:700;color:var(--navy);margin-bottom:28px;}
+.c-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;}
+.c-group{margin-bottom:16px;}
+.c-group label{display:block;font-size:11px;font-weight:600;color:var(--text-muted);letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;}
+.c-group input,.c-group select,.c-group textarea{width:100%;padding:12px 14px;border:1px solid #ddd;border-radius:5px;font-size:14px;color:var(--text);font-family:'DM Sans',sans-serif;background:#fafafa;transition:border-color .2s;}
+.c-group input:focus,.c-group select:focus,.c-group textarea:focus{outline:none;border-color:var(--red);background:#fff;}
+.c-group textarea{height:110px;resize:vertical;}
+
+footer{background:var(--navy-dark);padding:60px clamp(20px,5vw,80px) 0;}
+.footer-inner{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:60px;padding-bottom:60px;border-bottom:1px solid rgba(255,255,255,0.1);}
+.footer-logo img{height:52px;width:auto;background:#fff;padding:5px 8px;border-radius:4px;display:block;margin-bottom:16px;}
+.footer-about p{font-size:14px;color:rgba(255,255,255,0.5);line-height:1.8;}
+footer h4{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:18px;}
+footer a{display:block;color:rgba(255,255,255,0.65);font-size:14px;text-decoration:none;margin-bottom:10px;transition:color .2s;}
+footer a:hover{color:#fff;}
+.footer-bottom{max-width:1180px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:20px 0;}
+.footer-bottom p{color:rgba(255,255,255,0.35);font-size:12px;}
+.footer-bottom span{color:var(--red);font-size:12px;font-weight:600;}
+
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr;}
+  .services-grid{grid-template-columns:1fr;}
+  .why-grid{grid-template-columns:1fr 1fr;}
+  .testi-grid{grid-template-columns:1fr;}
+  .contact-wrap{grid-template-columns:1fr;gap:40px;}
+  .footer-inner{grid-template-columns:1fr 1fr;gap:40px;}
+  .stats-bar{grid-template-columns:repeat(2,1fr);}
+  .nav-links{display:none;}
+  .c-row{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="#">
+    <img src="https://pctransportandrecovery.co.uk/wp-content/uploads/2018/03/jmhnbgfvd.png" alt="Postcode Transport &amp; Recovery">
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <a class="nav-phone" href="tel:07854038883">07854 038883</a>
+    <a class="btn-red" href="#contact">Get a Quote</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-tag"><span></span><p>Suffolk Based &middot; Nationwide Coverage</p></div>
+      <h1>Vehicle Transport<br>&amp; Recovery<br><span class="gold">Done Right.</span></h1>
+      <p class="hero-sub">Professional car and light commercial vehicle transport across the UK. Fully insured, available 7 days a week. Up to 4 vehicles per trip.</p>
+      <div class="hero-btns">
+        <a class="btn-red" href="#contact">Get a Free Quote &rarr;</a>
+        <a class="btn-outline-white" href="tel:07854038883">Call 07854 038883</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat-card">
+        <div class="hero-stat-num">4</div>
+        <div class="hero-stat-label">Vehicles per trip</div>
+      </div>
+      <div class="hero-stat-card">
+        <div class="hero-stat-num">7</div>
+        <div class="hero-stat-label">Days a week</div>
+      </div>
+      <div class="hero-stat-card">
+        <div class="hero-stat-num">UK</div>
+        <div class="hero-stat-label">Nationwide coverage</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker">
+  <div class="ticker-track">
+    <div class="ticker-item">Vehicle Transport</div><div class="ticker-item">Breakdown Recovery</div><div class="ticker-item">Storage Facilities</div><div class="ticker-item">Trade Enquiries Welcome</div><div class="ticker-item">Fully Insured</div><div class="ticker-item">7 Days a Week</div><div class="ticker-item">National Coverage</div><div class="ticker-item">Suffolk Based</div><div class="ticker-item">Vehicle Transport</div><div class="ticker-item">Breakdown Recovery</div><div class="ticker-item">Storage Facilities</div><div class="ticker-item">Trade Enquiries Welcome</div><div class="ticker-item">Fully Insured</div><div class="ticker-item">7 Days a Week</div><div class="ticker-item">National Coverage</div><div class="ticker-item">Suffolk Based</div>
+  </div>
+</div>
+
+<div class="stats-bar">
+  <div class="stats-bar-item"><div class="stats-bar-num">2</div><div class="stats-bar-label">Trucks with Trailers</div></div>
+  <div class="stats-bar-item"><div class="stats-bar-num">4</div><div class="stats-bar-label">Vehicles Per Trip</div></div>
+  <div class="stats-bar-item"><div class="stats-bar-num">7</div><div class="stats-bar-label">Days a Week</div></div>
+  <div class="stats-bar-item"><div class="stats-bar-num">UK</div><div class="stats-bar-label">Wide Coverage</div></div>
+</div>
+
+<section class="services" id="services">
+  <div class="section-inner">
+    <div class="s-label"><span></span><p>What We Do</p></div>
+    <h2 class="section-title">Our Services</h2>
+    <p class="section-sub">Professional vehicle transport and recovery for private customers, traders, dealerships and fleet operators across the UK.</p>
+    <div class="services-grid">
+      <div class="svc-card">
+        <div class="svc-card-head">
+          <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg></div>
+          <div class="svc-name">Vehicle Transport</div>
+          <div class="svc-tag">Private &amp; Trade</div>
+        </div>
+        <div class="svc-body"><p>Safe, secure transport for cars and light commercial vehicles anywhere in the UK. We need your collection postcode, destination postcode and vehicle details — that's it.</p></div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-card-head">
+          <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M19 4H5C3.89 4 3 4.9 3 6v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 14 12 14s-3.5-1.57-3.5-3.5S10.07 7 12 7zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 17.18 9.64 17 12 17s4.53.18 6.24 1.19c.48.38.76.97.76 1.58V20z"/></svg></div>
+          <div class="svc-name">Breakdown Recovery</div>
+          <div class="svc-tag">7 Days a Week</div>
+        </div>
+        <div class="svc-body"><p>Fast, reliable recovery when you need it most. Our experienced team is available every day of the week to get you and your vehicle moving again.</p></div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-card-head">
+          <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></div>
+          <div class="svc-name">Storage Facilities</div>
+          <div class="svc-tag">Insurance Claims</div>
+        </div>
+        <div class="svc-body"><p>Secure storage for damaged vehicles pending insurance claims. Safe, monitored facilities giving you time to arrange repairs or settlements without pressure.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="section-inner">
+    <div class="s-label"><span></span><p>Why Choose Us</p></div>
+    <h2 class="section-title">The Postcode Promise</h2>
+    <p class="section-sub" style="color:rgba(255,255,255,0.55);margin-bottom:48px;">We've built our reputation on reliability, honesty and getting the job done properly — every time.</p>
+    <div class="why-grid">
+      <div class="why-card"><div class="why-num">01</div><div class="why-title">Fully Insured</div><div class="why-desc">Every vehicle we transport is covered. Complete peace of mind from collection to delivery.</div></div>
+      <div class="why-card"><div class="why-num">02</div><div class="why-title">7 Days a Week</div><div class="why-desc">Breakdowns and transport needs don't follow office hours — so neither do we.</div></div>
+      <div class="why-card"><div class="why-num">03</div><div class="why-title">Trade Welcome</div><div class="why-desc">Competitive rates for dealerships, auction houses and fleet operators. We understand trade volumes.</div></div>
+      <div class="why-card"><div class="why-num">04</div><div class="why-title">Efficient Loads</div><div class="why-desc">Two trucks, each carrying up to 4 vehicles. Better value per vehicle for bulk moves.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="testi" id="reviews">
+  <div class="section-inner">
+    <div class="s-label"><span></span><p>Customer Reviews</p></div>
+    <h2 class="section-title">What Our Customers Say</h2>
+    <p class="section-sub">Rated 5 stars on Google. Here's what recent customers have to say.</p>
+    <div class="testi-grid">
+      <div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-text">"Brilliant service from start to finish. Andy collected my car from Bristol and delivered it to Suffolk without a single scratch. Would absolutely use again."</p><div class="testi-name">James R.</div><div class="testi-loc">Bristol</div></div>
+      <div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-text">"Used Postcode Transport for a trade move of 3 vehicles. Prompt, professional and great value. Exactly the kind of service a busy garage needs."</p><div class="testi-name">M. Collins</div><div class="testi-loc">Trade Customer, Suffolk</div></div>
+      <div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-text">"Car broke down on the A14 on a Sunday. Andy was with me within the hour. Friendly, efficient and reasonably priced. Can't fault them at all."</p><div class="testi-name">Sarah T.</div><div class="testi-loc">Ipswich</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact-wrap">
+    <div class="contact-details">
+      <div class="s-label"><span></span><p>Get In Touch</p></div>
+      <h2>Ready to Book<br>a Transport?</h2>
+      <p>Tell us your collection and destination postcodes along with your vehicle details. We'll come back to you with a competitive quote quickly.</p>
+      <div class="c-detail"><div class="c-icon"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div><div class="c-txt"><strong>07854 038883</strong><span>Monday to Sunday, 7 days a week</span></div></div>
+      <div class="c-detail"><div class="c-icon"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div><div class="c-txt"><strong>andyigg@live.co.uk</strong><span>We reply within one business day</span></div></div>
+      <div class="c-detail"><div class="c-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div><div class="c-txt"><strong>Suffolk, UK</strong><span>Nationwide coverage from our Suffolk base</span></div></div>
+    </div>
+    <div class="contact-form">
+      <h3>Request a Free Quote</h3>
+      <div class="c-row">
+        <div class="c-group"><label>Your Name</label><input type="text" placeholder="John Smith"></div>
+        <div class="c-group"><label>Phone Number</label><input type="tel" placeholder="07700 900000"></div>
+      </div>
+      <div class="c-row">
+        <div class="c-group"><label>Collection Postcode</label><input type="text" placeholder="IP1 1AA"></div>
+        <div class="c-group"><label>Destination Postcode</label><input type="text" placeholder="M1 1AA"></div>
+      </div>
+      <div class="c-group"><label>Vehicle Make &amp; Model</label><input type="text" placeholder="e.g. Ford Focus 2019"></div>
+      <div class="c-group"><label>Additional Details</label><textarea placeholder="Any other information that would help us quote accurately..."></textarea></div>
+      <a class="btn-red" href="mailto:andyigg@live.co.uk" style="display:block;text-align:center;padding:14px;font-size:14px;">Send Quote Request &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-about">
+      <div class="footer-logo"><img src="https://pctransportandrecovery.co.uk/wp-content/uploads/2018/03/jmhnbgfvd.png" alt="Postcode Transport &amp; Recovery"></div>
+      <p>Suffolk based vehicle transport and recovery specialists. Serving private and trade customers across the UK, 7 days a week.</p>
+    </div>
+    <div><h4>Services</h4><a href="#services">Vehicle Transport</a><a href="#services">Breakdown Recovery</a><a href="#services">Storage Facilities</a><a href="#services">Trade Enquiries</a></div>
+    <div><h4>Company</h4><a href="#why">Why Choose Us</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></div>
+    <div><h4>Contact</h4><a href="tel:07854038883">07854 038883</a><a href="mailto:andyigg@live.co.uk">andyigg@live.co.uk</a><a href="#">Suffolk, UK</a></div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Postcode Transport &amp; Recovery. All rights reserved.</p>
+    <span>Built by UKBD Digital</span>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}
+  });
+});
+</script>
+</body>
+</html>
